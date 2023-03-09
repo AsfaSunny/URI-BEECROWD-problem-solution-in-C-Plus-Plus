@@ -18,3 +18,26 @@ int main(){
     
     return 0;
 }
+
+
+
+
+//easy way:
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int x, y, duration;
+    cin >> x >> y;
+    
+    if(x < y)
+        duration = y - x;
+    else
+        duration = 24 + y - x;
+        
+    cout << "O JOGO DUROU " << duration << " HORA(S)" << endl;
+    
+    return 0;
+}
