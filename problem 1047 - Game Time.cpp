@@ -27,3 +27,27 @@ int main(){
 
     return 0;
 }
+
+
+
+
+
+//2nd way: (judge accepted answer)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int start_h = 0, start_m = 0, end_h = 0, end_m = 0;
+    int duration;
+    cin >> start_h >> start_m >> end_h >> end_m;
+    
+    duration = (end_h * 60 + end_m) - (start_h * 60 + start_m);
+
+    if(duration <= 0){
+        duration = duration + (60*24);
+    }
+    cout << "O JOGO DUROU " << duration / 60 << " HORA(S) E " << duration % 60 << " MINUTO(S)" << endl;
+    
+    return 0;
+}
